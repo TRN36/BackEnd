@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "02478238-14ed-477d-b2b8-68cc1049d7c2",
+		"name": "HubEvent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/posts/getnextposts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/posts/getnextposts?lastPostId=6447d733e04eee9b0ffbac38",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"posts",
+						"getnextposts"
+					],
+					"query": [
+						{
+							"key": "lastPostId",
+							"value": "6447d733e04eee9b0ffbac38"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/posts/getallposts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/posts/getallposts?lastItemId=6447d63d6fc89025aa7ff07b",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"posts",
+						"getallposts"
+					],
+					"query": [
+						{
+							"key": "lastItemId",
+							"value": "6447d63d6fc89025aa7ff07b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/posts/getpost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/posts/getpost?postId=6447d695a0789fac1c5d7d82",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"posts",
+						"getpost"
+					],
+					"query": [
+						{
+							"key": "postId",
+							"value": "6447d695a0789fac1c5d7d82"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/posts/addComment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"postId\": \"6447d695a0789fac1c5d7d82\", \"userId\":\"641b869610ac235067bdeb84\", \"comment\":\"this is a test\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/posts/addComment",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"posts",
+						"addComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/posts/addComment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Sample Title\",\n  \"description\": \"Sample description.\",\n  \"image\": \"https://sampleimage.com/sample.jpg\",\n  \"userId\": \"sampleuser123\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/posts/posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/posts/posts?lastItemId=6419d6d6bb110ea47bfd345f",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"posts",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "lastItemId",
+							"value": "6419d6d6bb110ea47bfd345f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"teste\",\n\"email\": \"Teste@email.com\",\n\"password\": \"gdv#d1sds#dd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/users/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\": \"Teste@email.com\",\n\"password\": \"gdv#d1sds#dd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/posts/posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/posts/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"posts",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
